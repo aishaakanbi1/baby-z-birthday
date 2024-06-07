@@ -173,18 +173,27 @@ body {
     animation: colorChangeBackground 20s linear infinite;
 }
 
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
     #birthday-message {
         font-size: 1.5em;
         margin-top: 20px;
     }
     
+
     .photo-slider img, .reasons-slider .reason {
-        width: 300px;
-        height: 500px;
+        width: 100%;
         margin: 0;
         border-radius: 0;
     }
+    .photo-slider img {
+        width: 300px;
+        height: 500px;
+        object-fit: cover;
+        margin: 0 10px;
+        border-radius: 10px;
+    }
+    
     
     .photo-slider, .reasons-slider {
         height: auto;
@@ -199,4 +208,3 @@ body {
         margin: 10px auto;
     }
 }
-
